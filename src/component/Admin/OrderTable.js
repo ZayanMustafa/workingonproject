@@ -1,3 +1,5 @@
+// File : OrderTabel
+
 import { useState, useRef, useEffect } from 'react';
 import { FiUser, FiMail, FiPhone, FiCode, FiTruck, FiCalendar, FiCopy } from 'react-icons/fi';
 import { ClipboardIcon } from './ClipBoardIcon';
@@ -41,14 +43,30 @@ export const OrderTable = ({ orders }) => {
     navigator.clipboard.writeText(rowText);
   };
 
-  useEffect(() => {
-    window.addEventListener('mousemove', handleMouseMove);
-    window.addEventListener('mouseup', handleMouseUp);
-    return () => {
-      window.removeEventListener('mousemove', handleMouseMove);
-      window.removeEventListener('mouseup', handleMouseUp);
-    };
-  }, [isResizing]);
+useEffect(() => {
+  const handleMouseMove = (e) => {
+    if (!isResizing) return;
+    const tableRect = tableRef.current.getBoundingClientRect();
+    const newWidth = e.clientX - tableRect.left;
+    // Optional: use newWidth if needed
+  };
+
+  const handleMouseUp = () => {
+    setIsResizing(null);
+    document.body.style.cursor = '';
+  };
+
+  window.addEventListener('mousemove', handleMouseMove);
+  window.addEventListener('mouseup', handleMouseUp);
+
+  return () => {
+    window.removeEventListener('mousemove', handleMouseMove);
+    window.removeEventListener('mouseup', handleMouseUp);
+  };
+}, [isResizing]);
+
+
+
 
   return (
     <div 
