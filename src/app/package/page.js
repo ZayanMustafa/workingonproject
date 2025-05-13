@@ -1,6 +1,5 @@
 // app/package/page.js
 'use client';
-
 import { useState } from 'react';
 import PackageCard from '@/component/UI/Card';
 import { packages } from "@/constant/Packages";
@@ -42,10 +41,10 @@ const PackageSection = () => {
             <PackageCard
               key={index}
               vehicleType={pkg.vehicleType}
-              price={pkg.price}
+              price={pkg.finalPrice}  // Pass finalPrice instead of price
               discount={pkg.discount}
               features={pkg.features}
-              onGetReport={() => openModal(pkg.vehicleType, pkg.price * (1 - pkg.discount / 100))}
+              onGetReport={() => openModal(pkg.vehicleType, pkg.finalPrice)}
             />
           ))}
         </div>
@@ -62,3 +61,4 @@ const PackageSection = () => {
 };
 
 export default PackageSection;
+

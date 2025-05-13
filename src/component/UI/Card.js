@@ -1,5 +1,4 @@
-// File : src/compoent/UI/Card.js
-
+// File: src/component/UI/Card.js
 'use client';
 import { useState } from 'react';
 import { FaCar, FaShip, FaTruck, FaCheck } from 'react-icons/fa';
@@ -13,9 +12,8 @@ const vehicleIcons = {
   Ship: FaShip
 };
 
-const PackageCard = ({ vehicleType, price, discount, features }) => {
+const PackageCard = ({ vehicleType, price, discount, features, onGetReport }) => {
   const [showModal, setShowModal] = useState(false);
-  const discountedPrice = price * (1 - discount / 100);
   const IconComponent = vehicleIcons[vehicleType] || FaCar;
   
   return (
@@ -38,12 +36,9 @@ const PackageCard = ({ vehicleType, price, discount, features }) => {
         {/* Title */}
         <h3 className="text-3xl font-bold text-gray-900 mb-4">{vehicleType} Report</h3>
         
-        {/* Price */}
+        {/* Price - Only showing final price */}
         <div className="mb-6">
-          <span className="text-4xl font-bold text-gray-900">${discountedPrice.toFixed(2)}</span>
-          {discount > 0 && (
-            <span className="ml-3 text-xl text-gray-500 line-through">${price.toFixed(2)}</span>
-          )}
+          <span className="text-4xl font-bold text-gray-900">${price.toFixed(2)}</span>
           <span className="block text-gray-500 mt-1">one-time payment</span>
         </div>
         
@@ -59,7 +54,7 @@ const PackageCard = ({ vehicleType, price, discount, features }) => {
         
         {/* CTA Button */}
         <button
-          onClick={() => setShowModal(true)}
+          onClick={onGetReport || (() => setShowModal(true))}
           className="w-full py-4 px-6 rounded-xl text-xl border border-gray-200 hover:border-gray-300 font-bold text-gray-800 transition-all duration-300 hover:bg-gray-50"
         >
           Get {vehicleType} Report
@@ -71,7 +66,7 @@ const PackageCard = ({ vehicleType, price, discount, features }) => {
         show={showModal}
         onClose={() => setShowModal(false)}
         vehicleType={vehicleType}
-        price={discountedPrice}
+        price={price}
       />
     </div>
   );
