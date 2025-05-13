@@ -1,0 +1,35 @@
+
+// File : src/constant/Countires.js
+
+export const countries = [
+  { code: 'au', name: 'Australia', image: 'https://flagcdn.com/w80/au.png' },
+  { code: 'at', name: 'Austria', image: 'https://flagcdn.com/w80/at.png' },
+  { code: 'be', name: 'Belgium', image: 'https://flagcdn.com/w80/be.png' },
+  { code: 'ca', name: 'Canada', image: 'https://flagcdn.com/w80/ca.png' },
+  { code: 'dk', name: 'Denmark', image: 'https://flagcdn.com/w80/dk.png' },
+  { code: 'fi', name: 'Finland', image: 'https://flagcdn.com/w80/fi.png' },
+  { code: 'fr', name: 'France', image: 'https://flagcdn.com/w80/fr.png' },
+  { code: 'de', name: 'Germany', image: 'https://flagcdn.com/w80/de.png' },
+  { code: 'ie', name: 'Ireland', image: 'https://flagcdn.com/w80/ie.png' },
+  { code: 'it', name: 'Italy', image: 'https://flagcdn.com/w80/it.png' },
+  { code: 'jp', name: 'Japan', image: 'https://flagcdn.com/w80/jp.png' },
+  { code: 'lu', name: 'Luxembourg', image: 'https://flagcdn.com/w80/lu.png' },
+  { code: 'nl', name: 'Netherlands', image: 'https://flagcdn.com/w80/nl.png' },
+  { code: 'nz', name: 'New Zealand', image: 'https://flagcdn.com/w80/nz.png' },
+  { code: 'no', name: 'Norway', image: 'https://flagcdn.com/w80/no.png' },
+  { code: 'pt', name: 'Portugal', image: 'https://flagcdn.com/w80/pt.png' },
+  { code: 'sg', name: 'Singapore', image: 'https://flagcdn.com/w80/sg.png' },
+  { code: 'kr', name: 'South Korea', image: 'https://flagcdn.com/w80/kr.png' },
+  { code: 'es', name: 'Spain', image: 'https://flagcdn.com/w80/es.png' },
+  { code: 'se', name: 'Sweden', image: 'https://flagcdn.com/w80/se.png' },
+  { code: 'ch', name: 'Switzerland', image: 'https://flagcdn.com/w80/ch.png' },
+  { code: 'gb', name: 'United Kingdom', image: 'https://flagcdn.com/w80/gb.png' },
+  { code: 'us', name: 'United States', image: 'https://flagcdn.com/w80/us.png' },
+  { code: 'is', name: 'Iceland', image: 'https://flagcdn.com/w80/is.png' },
+  { code: 'mt', name: 'Malta', image: 'https://flagcdn.com/w80/mt.png' },
+  { code: 'cy', name: 'Cyprus', image: 'https://flagcdn.com/w80/cy.png' },
+  { code: 'si', name: 'Slovenia', image: 'https://flagcdn.com/w80/si.png' },
+  { code: 'ee', name: 'Estonia', image: 'https://flagcdn.com/w80/ee.png' },
+  { code: 'lt', name: 'Lithuania', image: 'https://flagcdn.com/w80/lt.png' },
+  { code: 'lv', name: 'Latvia', image: 'https://flagcdn.com/w80/lv.png' }
+];

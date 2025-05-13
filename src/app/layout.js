@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: 'FUSION Car Report',
+  title: 'Asset Central Report',
   description: 'Premium vehicle history reports',
 };
 

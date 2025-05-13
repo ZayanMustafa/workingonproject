@@ -3,19 +3,8 @@ import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { FaGlobeAmericas, FaShieldAlt, FaHandshake } from 'react-icons/fa';
 import { useEffect, useRef } from 'react';
+import { countries } from '@/constant/Countires';
 
-const countries = [
-  { code: 'sa', name: 'Saudi Arabia', image: 'https://flagcdn.com/w80/sa.png' },
-  { code: 'us', name: 'United States', image: 'https://flagcdn.com/w80/us.png' },
-  { code: 'pk', name: 'Pakistan', image: 'https://flagcdn.com/w80/pk.png' },
-  { code: 'om', name: 'Oman', image: 'https://flagcdn.com/w80/om.png' },
-  { code: 'in', name: 'India', image: 'https://flagcdn.com/w80/in.png' },
-  { code: 'bd', name: 'Bangladesh', image: 'https://flagcdn.com/w80/bd.png' },
-  { code: 'gb', name: 'United Kingdom', image: 'https://flagcdn.com/w80/gb.png' },
-  { code: 'ca', name: 'Canada', image: 'https://flagcdn.com/w80/ca.png' },
-  { code: 'de', name: 'Germany', image: 'https://flagcdn.com/w80/de.png' },
-  { code: 'fr', name: 'France', image: 'https://flagcdn.com/w80/fr.png' },
-];
 
 const TrustedWorldwide = () => {
   const controls = useAnimation();

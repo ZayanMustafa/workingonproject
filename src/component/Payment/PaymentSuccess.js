@@ -23,7 +23,7 @@ const PaymentSuccess = ({
           return;
         }
 
-        const response = await fetch(`http://localhost:5000/orders/admin/${orderId}`, {
+        const response = await fetch(`https://assetreportbackend.vercel.app/orders/admin/${orderId}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
