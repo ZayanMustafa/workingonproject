@@ -45,41 +45,45 @@ export const HISTORY = [
         content: "Today, Fusionscar stands as an industry leader in vehicle history reporting, serving millions of customers worldwide. Our commitment to accuracy, comprehensiveness, and customer service has earned us the trust of consumers, dealers, and industry professionals alike. As we continue to grow and innovate, we remain dedicated to our original mission of making the used vehicle market more transparent and safer for everyone."
     }
 ];
+  
+
 
 
 
 export const COUNTRIES = [
-    {
-      name: "Saudi Arabia",
-      description: "Providing comprehensive vehicle reports across all regions of Saudi Arabia with official ministry data.",
-      icon: "🇸🇦"
-    },
-    {
-      name: "United States",
-      description: "Nationwide coverage with detailed vehicle history reports from all 50 states.",
-      icon: "🇺🇸"
-    },
-    {
-      name: "Pakistan",
-      description: "Complete vehicle verification services with Pakistan's motor vehicle registry integration.",
-      icon: "🇵🇰"
-    },
-    {
-      name: "Oman",
-      description: "Official vehicle history reports with Oman Royal Police data integration.",
-      icon: "🇴🇲"
-    },
-    {
-      name: "India",
-      description: "Pan-India coverage with RTO verified vehicle information and history.",
-      icon: "🇮🇳"
-    },
-    {
-      name: "Bangladesh",
-      description: "Comprehensive BRTA-verified vehicle reports across all divisions.",
-      icon: "🇧🇩"
-    }
-  ];
+  {
+    name: "United States",
+    description: "Nationwide coverage with detailed vehicle history reports from all 50 states including NMVTIS data.",
+    icon: "🇺🇸"
+  },
+  {
+    name: "Canada",
+    description: "Complete vehicle history reports with provincial registration data and collision history.",
+    icon: "🇨🇦"
+  },
+  {
+    name: "United Kingdom",
+    description: "Comprehensive DVLA-verified vehicle checks including MOT history and mileage records.",
+    icon: "🇬🇧"
+  },
+  {
+    name: "Germany",
+    description: "Full vehicle history with TÜV inspection records and German Federal Motor Transport Authority data.",
+    icon: "🇩🇪"
+  },
+  {
+    name: "Japan",
+    description: "JMVIA-certified vehicle export packages with auction sheets and maintenance history.",
+    icon: "🇯🇵"
+  },
+  {
+    name: "Australia",
+    description: "PPSR-registered encumbrance checks with state-by-state registration history.",
+    icon: "🇦🇺"
+  }
+];
+
+
   
   export const FAQS = [
     {

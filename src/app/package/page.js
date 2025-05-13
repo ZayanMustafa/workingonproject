@@ -41,7 +41,7 @@ const PackageSection = () => {
             <PackageCard
               key={index}
               vehicleType={pkg.vehicleType}
-              price={pkg.finalPrice}  // Pass finalPrice instead of price
+              price={pkg.finalPrice} 
               discount={pkg.discount}
               features={pkg.features}
               onGetReport={() => openModal(pkg.vehicleType, pkg.finalPrice)}
